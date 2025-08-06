@@ -14,7 +14,7 @@ export const DashboardPageContent = () => {
     const queryClient = useQueryClient();
 
     const trpc = useTRPC();
-    const { data } = useSuspenseQuery(trpc.count.getCounts.queryOptions({ countId: "ebdece2c-c120-4981-94fe-1586642dcda1" }));
+    const { data } = useSuspenseQuery(trpc.count.getCounts.queryOptions({ countId: "84bde7a3-9450-4d01-95bb-6343a0f28c7d" }));
 
     const createCount = useMutation(trpc.count.createCount.mutationOptions({
         onError: (error) => {
